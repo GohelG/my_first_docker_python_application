@@ -18,8 +18,10 @@ This repository, my_first_docker_python_application, serves as a straightforward
    bash command - curl http://localhost:8091
 
    **⚠️ Troubleshooting Tips**
-   Fix the Code: In your server.py snippet, you need to add from flask import Flask at the very top, or the build will fail during the run stage.
-   Clean Up: If you need to restart because of an error, remove the old container first:
+   **Fix the Code**: In your server.py snippet, you need to add from flask import Flask at the very top, or the build will fail during the run stage.
+   
+   **Clean Up**: If you need to restart because of an error, remove the old container first:
    * docker stop pythonapp_kgcorp
    * docker rm pythonapp_kgcorp
+   
    **Port Conflicts:** Ensure port 8091 isn't already being used by another service on your host.
