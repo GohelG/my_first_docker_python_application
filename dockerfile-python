@@ -1,0 +1,21 @@
+FROM python:3.12.12-alpine3.23
+ 
+WORKDIR /app
+ 
+COPY src/requirements.txt .
+ 
+RUN pip3 install --no-cache-dir -r  requirements.txt 
+
+COPY src /app
+
+EXPOSE 8082
+
+CMD ["python3","server.py"]
+
+
+
+# docker build -t nautilus/python-app .
+# docker run -d --name pythonapp_nautilus -p 8091:8082 nautilus/python-app
+# sudo docker run -d -p 8091:3000 nautilus/python-app:latest
+# docker ps
+# curl http://localhost:8091
