@@ -1,5 +1,5 @@
 **Small description of the project**
-This repository, my_first_docker_python_application, serves as a straightforward demonstration of how to containerize a Python application using Docker. It includes a basic Python server script (**server.py**), a dependency list (**requirements.txt**), and a **dockerfile-python** to build the environment.
+This repository, my_first_docker_python_application, serves as a straightforward demonstration of how to containerize a Python application using Docker. It includes a basic Python server script (**server.py**), a dependency list (**requirements.txt**), and a **Dockerfile** to build the environment.
 
 **Building the image**: docker build -t kgcorp/python-app .
 
